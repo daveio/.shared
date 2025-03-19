@@ -17,8 +17,7 @@ services:
       - type: volume
         source: shared-postgres-data
         target: /var/lib/postgresql/data
-    environment:
-      POSTGRES_PASSWORD: my*generation
+    env_file: postgres.env
 
   adminer:
     image: adminer
