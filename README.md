@@ -1,3 +1,3 @@
-# shared
+# .shared
 
 Shared resources
