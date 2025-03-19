@@ -14,8 +14,12 @@ services:
         source: shared-postgres-data
         target: /var/lib/postgresql/data
     env_file: postgres.env
+    security_opt:
+      - no-new-privileges:true
   adminer:
     image: adminer
     restart: always
     ports:
       - 8080
+    security_opt:
+      - no-new-privileges:true
