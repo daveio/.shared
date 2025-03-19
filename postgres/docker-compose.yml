@@ -1,4 +1,3 @@
-version: "3.9"
 name: shared-postgres
 services:
   postgres:
@@ -9,7 +8,7 @@ services:
       - type: tmpfs
         target: /dev/shm
         tmpfs:
-          size: 134217728 # 128*2^20 bytes = 128Mb
+          size: 134217728
       - type: volume
         source: shared-postgres-data
         target: /var/lib/postgresql/data
@@ -28,3 +27,4 @@ services:
       - 8080
     security_opt:
       - no-new-privileges:true
+    read_only: true
