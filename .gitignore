@@ -1,0 +1,18 @@
+# macOS
+**/._*
+**/.AppleDouble
+**/.com.apple.timemachine.donotpresent
+**/.DocumentRevisions-V100
+**/.DS_Store
+**/.fseventsd
+**/.LSOverride
+**/.Spotlight-V100
+**/.Spotlight-V100
+**/.TemporaryItems
+**/.TemporaryItems
+**/.Trashes
+**/.Trashes
+**/.VolumeIcon.icns
+
+# env
+**/*.env
